@@ -1,0 +1,253 @@
+---
+title: Homepage
+layout: 'base.njk'
+---
+
+  <!--Search-->
+  <div class="search container" id="search-container">
+    <div class="search-container">
+      <div class="search-bar-content">
+        <button class="exit-btn theme-button btn" id="search-close-btn">
+          <i class="ri-close-line"></i>
+        </button>
+        <input class="search-bar" type="text" placeholder="Search..."
+        id="search-input">
+      </div>
+      <div class="search-results-container">
+        <div class="search-results-inner">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Menu-->
+  <div class="menu-bar container">
+    <div class="menu-headline">
+      <div class="menu-components">
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/contact.html">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <!--Articles-->
+  <div class="articles-block container" id="articles-block">
+    <div class="articles-flex">
+      <div class="articles-grid">
+
+        {%- for post in collections.post | reverse -%}
+          <div class="article-x">
+            <div class="article-x-flex">
+                <div class="article-1">
+                  <img class="image" src="{{ post.data.image }}" alt="">
+                </div>
+
+                <div class="article-description">
+                  <span class="article-date"> <i class="fa fa-calendar"></i> {{ post.data.date | postDate }}</span>
+
+                  <a href="{{ post.url }}">
+                    <h2 class="article-title">{{ post.data.title }}</h2>
+                  </a>
+
+                  <div class="article-author">
+                    <div class="image-container">
+                      <img class="author-picture" src="./pictures/author-picture.jpeg" alt="">
+                    </div>
+                    <div class="text-container">
+                      <a href="author.html" target="_blank">
+                        <span class="author-name">
+                          {{ post.data.author }}
+                        </span>
+                      </a>
+                    </div>
+                  </div> 
+                </div>
+            </div>
+          </div>
+        {%- endfor -%}
+        
+        <div class="article-x">
+          <div class="article-x-flex">
+
+            <div class="article-1">
+              <img class="image" src="pictures/Cyber Secuirty.png" alt="">
+            </div>
+
+            <div class="article-description">
+
+              <span class="article-date">12-12-2004</span>
+              <a href="article.html">
+                <h2 class="article-title">farted Identity</h2>
+              </a>
+
+              <div class="article-author">
+                <div class="image-container">
+                  <img class="author-picture" src="./pictures/author-picture.jpeg" alt="">
+                </div>
+                <div class="text-container">
+                  <a href="author.html" target="_blank">
+                    <span class="author-name">
+                      Bogdan Grossu
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="article-x">
+          <div class="article-x-flex">
+
+            <div class="article-1">
+              <img class="image" src="pictures/Cyber Secuirty.png" alt="">
+            </div>
+
+            <div class="article-description">
+
+              <span class="article-date">12-12-2004</span>
+              <a href="article.html">
+                <h2 class="article-title">farted Identity</h2>
+              </a>
+
+              <div class="article-author">
+                <div class="image-container">
+                  <img class="author-picture" src="./pictures/author-picture.jpeg" alt="">
+                </div>
+                <div class="text-container">
+                  <a href="author.html" target="_blank">
+                    <span class="author-name">
+                      Bogdan Grossu
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="article-x">
+          <div class="article-x-flex">
+
+            <div class="article-1">
+              <img class="image" src="pictures/Cyber Secuirty.png" alt="">
+            </div>
+
+            <div class="article-description">
+
+              <span class="article-date">12-12-2004</span>
+              <a href="article.html">
+                <h2 class="article-title">farted Identity</h2>
+              </a>
+
+              <div class="article-author">
+                <div class="image-container">
+                  <img class="author-picture" src="./pictures/author-picture.jpeg" alt="">
+                </div>
+                <div class="text-container">
+                  <a href="author.html" target="_blank">
+                    <span class="author-name">
+                      Bogdan Grossu
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="article-x">
+          <div class="article-x-flex">
+
+            <div class="article-1">
+              <img class="image" src="/rog.jpg" alt="">
+            </div>
+
+            <div class="article-description">
+
+              <span class="article-date">12-12-2004</span>
+              <a href="article.html">
+                <h2 class="article-title">how to become the best person on the </h2>
+              </a>
+
+              <div class="article-author">
+                <div class="image-container">
+                  <img class="author-picture" src="./pictures/author-picture.jpeg" alt="">
+                </div>
+                <div class="text-container">
+                  <a href="author.html" target="_blank">
+                    <span class="author-name">
+                      Bogdan Grossu
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="article-x">
+          <div class="article-x-flex">
+
+            <div class="article-1">
+              <img class="image" src="pictures/Cyber Secuirty.png" alt="">
+            </div>
+
+            <div class="article-description">
+
+              <span class="article-date">12-12-2004</span>
+              <a href="article.html">
+                <h2 class="article-title">how to setup the ultimate SOC Analyst Lab?</h2>
+              </a>
+
+              <div class="article-author">
+
+                <div class="image-container">
+                  <img class="author-picture" src="./pictures/author-picture.jpeg" alt="">
+                </div>
+                <div class="text-container">
+                  <a href="author.html" target="_blank">
+                    <span class="author-name">
+                      Bogdan Grossu
+                    </span>
+                  </a>
+                </div>
+                
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="article-x">
+          <div class="article-1">asdf asdfsfsdfasdfasdfasdfasdfasdf</div>
+          <div class="article-1">asdf</div>
+          <div class="article-1">asdf</div>
+          <div class="article-1">asdf</div>
+        </div>
+        <div class="article-x">
+          <div class="article-1">asdf asdfsfsdfasdfasdfasdfasdfasdf</div>
+          <div class="article-1">asdf</div>
+          <div class="article-1">asdf</div>
+          <div class="article-1">asdf</div>
+        </div>
+
+      </div>
+    </div>
+    <div class="load-more-container">
+      <button class="load-more-btn" id="load-more-btn"> Load More</button>
+    </div>
+  </div>
+
+
+  <script src="js/main.js"></script>

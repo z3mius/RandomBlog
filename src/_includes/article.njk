@@ -1,0 +1,45 @@
+---
+layout: 'base.njk'
+---
+
+<body style="transition: all 0.15s ease;" class="container-article">
+
+
+  <!--Menu-->
+  <div class="menu-bar">
+    <div class="menu-headline">
+      <div class="menu-components">
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/contact.html">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <!--Article Content-->
+  <div class="header-article">
+
+    <div class="article-content">
+      
+      <!--Article Heading-->
+      <h2 class="article-title">{{ title }}</h2>
+
+      <!--Article Image-->
+      <div class="article-headline-image">
+        <img class="article-image" src="{{ image }}" alt="">
+      </div>
+      <!--Article paragraphs-->
+      {{ content | safe }}
+  </div>
+
+</body>
