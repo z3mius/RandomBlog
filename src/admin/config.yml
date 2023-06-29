@@ -3,12 +3,12 @@ backend:
   branch: main
 
 publish_mode: editorial_workflow
-media_folder: "public/pictures/articles/analysis"
+media_folder: "/public/pictures/articles/analysis"
 public_folder: "pictures/articles/analysis"
 collections:
   - name : "blog"
     label: "Blog"
-    folder: "src/blog"
+    folder: "./src/blog"
     create: true
     delete: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
