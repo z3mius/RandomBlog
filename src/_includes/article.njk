@@ -40,7 +40,7 @@ layout: 'base.njk'
       </div>
       <!--Article paragraphs-->
       {{ content | safe }}
-      {{ .textbox.body | markdownify }}
+      {{ content | markdownify }}
   </div>
 
 </body>
