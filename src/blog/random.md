@@ -1,11 +1,9 @@
 ---
+image: pictures/rog.jpg
 title: World's Dirtiest Virus
 author: Bogdan Grossu
-author-picture: /pictures/author-picture.jpeg
-date: 2023-06-01
-tags: ["post"]
-image: pictures/rog.jpg
-description: building a Lab is dope.
+date: 2023-06-01T00:00:00.000Z
+tags:
+  - post
 ---
-
 hello I'm so cool
