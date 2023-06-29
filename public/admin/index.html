@@ -1,78 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-  <title>Create a New Blog</title>
-  <script src="https://cdn.tiny.cloud/1/YOUR_API_KEY/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-  <style>
-    /* CSS styles for the page */
-    body {
-      font-family: Arial, sans-serif;
-    }
-    
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    
-    h1 {
-      text-align: center;
-    }
-    
-    button {
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
-  <script>
-    // Initialize TinyMCE editor
-    tinymce.init({
-      selector: '#contentInput',
-      height: 300,
-      menubar: false,
-      plugins: 'lists link',
-      toolbar: 'bold italic underline | numlist bullist | link',
-    });
-  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+  
+  <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^0.7.0/dist/cms.css" />
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>Create a New Blog</h1>
-    <form id="blogForm">
-      <input type="text" id="titleInput" placeholder="Enter blog title" required>
-      <textarea id="contentInput" placeholder="Enter blog content" required></textarea>
-      <button type="submit">Publish</button>
-    </form>
-  </div>
-
-  <script>
-    // JavaScript code for handling the form submission
-    document.getElementById("blogForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // Prevent the form from submitting
-      
-      // Get the values from the form inputs
-      var title = document.getElementById("titleInput").value;
-      var content = tinymce.activeEditor.getContent(); // Retrieve content from TinyMCE editor
-      
-      // Create a data object with the blog information
-      var blogData = {
-        title: title,
-        content: content
-      };
-      
-      // Perform further processing or saving of the blog data here
-      // For example, you can use AJAX to send the data to a server-side script for storage
-      
-      // This is just a demo, so we'll log the data to the console
-      console.log(blogData);
-      
-      // Clear the form inputs
-      document.getElementById("titleInput").value = "";
-      tinymce.activeEditor.setContent(''); // Clear the TinyMCE editor content
-    });
-  </script>
+  <script src="https://unpkg.com/netlify-cms@^0.7.0/dist/cms.js"></script>
 </body>
 </html>

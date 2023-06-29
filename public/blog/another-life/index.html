@@ -29,11 +29,84 @@
 </head>
 <body class="container">
 
-  {% include 'header.njk' %}
+  <header class="header container">
+  <nav class="navbar">
+    
+    <div class="header-left">
+      <a class="logo-a" href="#">
+        <img class="logo-icon" src="logo (3).png" alt="">
+        <h2 class="logo">The Infosec Blog</h2>
+      </a>
+    </div>
+
+    <div class="header-right-section">
+
+
+      <button class="btn search-button header-right-section" id="search-toggle-btn">
+        <i class="ri-search-line"></i>
+      </button>
+
+      <a href="author.html">
+        <button class="btn user-icon">
+          <i class="fa fa-user-circle"></i>
+        </button>
+      </a>
+
+    </div>
+  </nav>
+</header>
   <main>
-    {{ content | safe }}
+    
+<body style="transition: all 0.15s ease;" class="container-article">
+
+
+  <!--Menu-->
+  <div class="menu-bar">
+    <div class="menu-headline">
+      <div class="menu-components">
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/contact.html">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <!--Article Content-->
+  <div class="header-article">
+
+    <div class="article-content">
+      
+      <!--Article Heading-->
+      <h2 class="article-title">another life for free</h2>
+
+      <!--Article Image-->
+      <div class="article-headline-image">
+        <img class="article-image" src="programming-background-concept.jpg" alt="">
+      </div>
+      <!--Article paragraphs-->
+      <p>asdfjaskldjflkasdf</p>
+
+  </div>
+
+</body>
+
   </main>
-  {% include 'footer.njk' %}
+  <footer class="footer container">
+  <div class="footer-elements">
+    <h3>© The Infosec Blog 2023</h2>
+  </div>
+</footer>
+</div>
 
   <script>
     if (window.netlifyIdentity) {

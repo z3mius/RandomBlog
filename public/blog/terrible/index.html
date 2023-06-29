@@ -22,11 +22,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <title>CyberAnalyst</title>
 
 </head>
 <body class="container">
+
   <header class="header container">
   <nav class="navbar">
     
@@ -107,5 +109,17 @@ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
   </div>
 </footer>
 </div>
+
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
