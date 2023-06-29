@@ -4,7 +4,7 @@ backend:
 
 publish_mode: editorial_workflow
 media_folder: "/public"
-public_folder: "pictures/articles/analysis"
+public_folder: "/public"
 collections:
   - name : "blog"
     label: "Blog"
