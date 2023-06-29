@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: z3mius/RandomBlog
   branch: main
 
 
