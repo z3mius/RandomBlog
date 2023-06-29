@@ -7,7 +7,3 @@ tags:
   - post
 ---
 asdfjaskldjflkasdf
-
-![](/pictures/author-picture.jpeg)
-
-interesting stuff is that this genererates tons of problems because of the
