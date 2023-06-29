@@ -1,9 +1,9 @@
 ---
-title: I like to eat farts
-date: 2023-06-01
-tags: ["post"]
-image: pictures/programming-background-concept.jpg
-description: building a Lab is dope.
+image: pictures/rog.jpg
+title: World's Dirtiest Virus
+author: Bogdan Grossu
+date: 2023-06-01T00:00:00.000Z
+tags:
+  - post
 ---
-
 hello I'm so cool
