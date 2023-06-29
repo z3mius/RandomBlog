@@ -2,10 +2,10 @@
 image: /pictures/articles/analysis/done.png
 title: How to grow your network
 author: Kevin Peterson
-date: ' '
+date: 2023-05-31T00:00:00+02:00
 tags:
   - post
 ---
-![](/pictures/articles/analysis/eth3.png)
+![null](/pictures/articles/analysis/eth3.png)
 
-This is one of the best things I've seen so far
+* hello
