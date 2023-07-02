@@ -1,7 +1,19 @@
+// Add above your Eleventy config
+const markdownIt = require("markdown-it");
+
+// Add within your config module
+const md = new markdownIt({
+  html: true,
+});
+
+
 const { DateTime } = require("luxon");
-const markdownIt = require('markdown-it');
 
 module.exports = function(eleventyConfig) {
+
+  eleventyConfig.addFilter("markdown", (content) => {
+    return md.render(content);
+  });
 
   eleventyConfig.addPassthroughCopy('src/styles/');
   eleventyConfig.addPassthroughCopy('src/');
