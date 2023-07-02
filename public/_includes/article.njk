@@ -39,9 +39,7 @@ layout: 'base.njk'
         <img class="article-image" src="{{ image }}" alt="">
       </div>
       <!--Article paragraphs-->
-      {% for paragraph in content %}
-        {{ paragraph | safe }}
-      {% endfor %}
+      {{ content | safe }}
   </div>
 
 </body>
