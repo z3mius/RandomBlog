@@ -39,7 +39,9 @@ layout: 'base.njk'
         <img class="article-image" src="{{ image }}" alt="">
       </div>
       <!--Article paragraphs-->
-      {{ data.content | markdown | safe }}
+      {{ content | safe}}
+      {{ markdownify | safe }}
+    </div>
   </div>
 
 </body>
