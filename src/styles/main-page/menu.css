@@ -17,6 +17,8 @@
 }
 
 .nav-menu {
+  margin: 0;
+  padding-left: 0;
   text-decoration: none;
   display: flex;
   justify-content: center;
