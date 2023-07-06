@@ -37,10 +37,11 @@ a {
 }
 
 ul {
-  display: inline-block;
-  margin-right: auto;
-  margin-left: 2em;
-  padding-left: 2em;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 span {
