@@ -36,6 +36,13 @@ a {
   color: var(--text-color);
 }
 
+ul {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: 2em;
+  padding-left: 2em;
+}
+
 span {
   padding: 0;
   margin: 0;
