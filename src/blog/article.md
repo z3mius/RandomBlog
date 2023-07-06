@@ -16,3 +16,5 @@ description: building a Lab is dope.
 **Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. 
 
 1. a﻿nother point is having a wife
+
+![a problematic dog](pictures/index.jpeg)
