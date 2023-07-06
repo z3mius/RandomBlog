@@ -36,12 +36,11 @@ a {
   color: var(--text-color);
 }
 
-ul {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
+ul, ol {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: 2em;
+  padding-left: 2em;
 }
 
 span {
