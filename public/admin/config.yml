@@ -13,9 +13,9 @@ collections:
     delete: true
     slug: "{{year}}-{{month}}-{{day}}"
     fields:
-      - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "image", widget: image}
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Body", name: "body", widget: "markdown" }
