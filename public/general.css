@@ -36,14 +36,6 @@ a {
   color: var(--text-color);
 }
 
-ul {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
 span {
   padding: 0;
   margin: 0;
