@@ -17,12 +17,16 @@
 }
 
 .nav-menu {
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: var(--gap);
 }
 
+.nav-item {
+  list-style: none;
+}
 
 .nav-link {
   font-size: 16px;
