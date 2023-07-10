@@ -32,7 +32,7 @@ layout: 'base.njk'
     <div class="article-content">
       
       <!--Article Heading-->
-      <h2 class="article-title">{{ title }}</h2>
+      <h2 class="article-headline">{{ title }}</h2>
 
       <!--Article Image-->
       <div class="article-headline-image">
@@ -40,7 +40,6 @@ layout: 'base.njk'
       </div>
       <!--Article paragraphs-->
       {{ content | safe}}
-      {{ markdownify | safe }}
     </div>
   </div>
 

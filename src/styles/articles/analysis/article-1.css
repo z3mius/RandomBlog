@@ -38,7 +38,7 @@ p {
   border-radius: var(--border-radius);
 }
 
-.article-title {
+.article-headline {
   font-size: 30px;
 }
 
@@ -215,7 +215,7 @@ pre {
 }
 
 @media (max-width: 768px) {
-  .article-title {
+  .article-headline {
     font-size: 25px;
   }
 
